@@ -1,0 +1,27 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myCustomPropertiesEnabled" value="true" />
+      <option name="myIgnoreVendorSpecificProperties" value="false" />
+      <option name="myCustomPropertiesList">
+        <value>
+          <list size="12">
+            <item index="0" class="java.lang.String" itemvalue="border-left-style" />
+            <item index="1" class="java.lang.String" itemvalue="border-right-style" />
+            <item index="2" class="java.lang.String" itemvalue="border-top-style" />
+            <item index="3" class="java.lang.String" itemvalue="border-bottom-style" />
+            <item index="4" class="java.lang.String" itemvalue="row-gap" />
+            <item index="5" class="java.lang.String" itemvalue="outline-color" />
+            <item index="6" class="java.lang.String" itemvalue="outline-width" />
+            <item index="7" class="java.lang.String" itemvalue="outline-style" />
+            <item index="8" class="java.lang.String" itemvalue="outline-offset" />
+            <item index="9" class="java.lang.String" itemvalue="outline" />
+            <item index="10" class="java.lang.String" itemvalue="unity-font-style" />
+            <item index="11" class="java.lang.String" itemvalue="border-style" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

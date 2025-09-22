@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050097fac053465ba64da10287e41ad9, type: 3}
+  m_Name: PP_Softbody_Soft
+  m_EditorClassIdentifier: Assembly-CSharp-Editor::SoftbodyPhysicsProfile
+  SpringJointDampingRatio: 0.2
+  SpringJointFrequency: 1.75
+  SpringEnableCollision: 0
+  RigidbodyMass: 0.27
+  RigidbodyLinearDamping: 0
+  RigidbodyAngularDramping: 7.5
+  RigidbodyFreezeRotation: 1
+  RigidbodyInterpolation: 1
+  CollisionDetection: 1
+  ColliderSize: 0.5
+  UseColliderOffset: 1

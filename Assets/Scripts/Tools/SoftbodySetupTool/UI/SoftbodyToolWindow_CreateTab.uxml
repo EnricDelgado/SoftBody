@@ -1,0 +1,17 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:ui="UnityEditor.UIElements">
+    <VisualElement class="root">
+        <Label text="SoftBody 2D Setup Tool" class="title" />
+        <VisualElement class="body">
+            <Label text="Create Softbody Setup" class="h1" />
+            <VisualElement class="section">
+                <Label text="SoftBody Values" class="h2" />
+                <VisualElement class="subsection">
+                    <ui:ObjectField class="p" name="sprite" label="Sprite" object-type="UnityEngine.SpriteRenderer" />
+                    <ui:ObjectField class="p" name="physicsProfile" label="Physics Profile" object-type="SoftbodyPhysicsProfile" />
+                </VisualElement>
+                <Toggle name="hasCentralBone" label="Has Central Bone?" value="true" />
+            </VisualElement>
+            <Button name="createBtn" text="Setup Soft Body" class="button_action" />
+        </VisualElement>
+    </VisualElement>
+</UXML>

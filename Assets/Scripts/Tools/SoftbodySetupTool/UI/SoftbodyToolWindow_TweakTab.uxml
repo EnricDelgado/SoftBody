@@ -1,0 +1,13 @@
+<UXML xmlns="UnityEngine.UIElements" xmlns:ui="UnityEditor.UIElements">
+    <VisualElement class="root">
+        <Label class="title" text="SoftBody 2D Setup Tool" />
+        <VisualElement class="body">
+            <Label class="h1" text="Tweak Physics Profile" />
+            <VisualElement class="section">
+                <Label class="h2" text="SoftBody Physics Profile" />
+                <ui:ObjectField class="p" name="profileField" label="Physics Profile" object-type="SoftbodyPhysicsProfile" />
+            </VisualElement>
+            <Button class="button_action" name="applyBtn" text="Apply Physics Setup" />
+        </VisualElement>
+    </VisualElement>
+</UXML>

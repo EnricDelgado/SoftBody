@@ -1,0 +1,140 @@
+/* Text Styling */
+.title {
+    font-size: 24px;
+    margin: 2px 0;
+}
+
+.h1 {
+    font-size: 19px;
+    margin: 2px 0;
+}
+
+.h2 {
+    font-size: 17px;
+    margin: 1px 0;
+}
+
+.h3 {
+    font-size: 15px;
+    margin: 1px 0;
+}
+
+.p {
+    font-size: 12px;
+    margin: 1px 0;
+}
+/* -------------------------------- */
+
+/* Region Styling */
+.root {
+    padding: 12px;
+    max-width: 680px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+
+    border-left-width: 2px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+
+    border-left-color: rgb(70,130,200);
+    border-right-color: rgba(255,255,255,0.04);
+    border-top-color: rgba(255,255,255,0.04);
+    border-bottom-color: rgba(0,0,0,0.35);
+
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.03);
+
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.section {
+    display:  flex;
+    flex-direction: column;
+
+    border-left-width: 2px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-radius: 6px;
+
+    border-left-color: rgba(0,0,0,0.35);
+    border-right-color: rgba(0,0,0,0.35);
+    border-top-color: rgba(0,0,0,0.35);
+    border-bottom-color: rgba(0,0,0,0.35);
+
+    background-color: rgba(255,255,255,0.03);
+    
+    padding: 6px;
+    margin: 6px 0;
+}
+
+.subsection {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 4px;
+    margin: 4px 0;
+}
+/* ---------------------------------- */
+
+
+/* Slider visuals */
+Slider {
+    margin: 2px;
+}
+Slider .unity-slider__dragger {
+    height: 6px;
+    border-radius: 3px;
+}
+Slider .unity-slider__tracker {
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.08);
+}
+/* ----------------------------------------- */
+
+
+/* Toggle styling*/
+Toggle {
+    margin: 1px 0;
+}
+/* ----------------------------------------- */
+
+/* Buttons */
+.button_action {
+    height: 32px;
+    margin-top: 8px;
+
+    border-top-width: 1px;
+    border-bottom-width: 2px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-radius: 6px;
+
+    border-top-color: rgba(255,255,255,0.12);
+    border-left-color: rgba(255,255,255,0.10);
+    border-right-color: rgba(0,0,0,0.35);
+    border-bottom-color: rgba(0,0,0,0.45);
+
+    color: white;
+}
+
+.button_action:hover {
+    background-color: rgb(149, 149, 149);
+}
+
+.button_action:active {
+    background-color: rgb(149, 149, 149);
+    border-bottom-color: rgba(0,0,0,0.35);
+    translate: 0 1px;
+}
+
+.button_action:disabled {
+    background-color: rgba(120,120,120,0.35);
+    color: rgba(255,255,255,0.6);
+}
