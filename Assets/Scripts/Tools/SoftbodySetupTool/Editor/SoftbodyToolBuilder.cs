@@ -50,6 +50,7 @@ public static class SoftbodyToolBuilder
         }
 
         SetupBones(bones, config);
+        SetupParent(root, bones[0].GetComponent<Rigidbody2D>());
 
         int boneCount = BoneCount(bones, config);
 
@@ -80,6 +81,9 @@ public static class SoftbodyToolBuilder
                 SetupBoneSpringJoint(config, crossSpringJoint, bones, boneIndex, boneCount, JointTarget.Cross);
             }
             else SetupAntiCompressionStrut(config, boneGO, bones, boneIndex, boneCount);
+            
+            // TRY THIS FOR FIXIING THE ROTATION ISSUE
+            SetupBoneRelativeJointRot(root.GetComponent<Rigidbody2D>(), boneGO);
         }
 
         Undo.CollapseUndoOperations(group);
@@ -87,8 +91,6 @@ public static class SoftbodyToolBuilder
         runtime.HasCentralBone = config.HasCentralBone;
         runtime.SpriteSkin = root.GetComponent<SpriteSkin>();
         
-        SetupParent(root, bones[0].GetComponent<Rigidbody2D>());
-
         return root;
     }
 
@@ -172,6 +174,21 @@ public static class SoftbodyToolBuilder
         distanceJoint.autoConfigureConnectedAnchor = false;
         distanceJoint.anchor = Vector2.zero;
         distanceJoint.connectedAnchor = Vector2.zero;
+    }
+
+    private static void SetupBoneRelativeJointRot(Rigidbody2D parent, GameObject bone)
+    {
+        var joint = bone.AddComponent<RelativeJoint2D>();
+        joint.connectedBody = parent;
+
+        joint.autoConfigureOffset = false;
+        joint.linearOffset = Vector2.zero; 
+        joint.maxForce = 0f;
+
+        joint.angularOffset = 0f;
+        joint.maxTorque = 1000f;
+        joint.correctionScale = 1f;
+
     }
 
     private static void SetupBoneCollider(SoftbodyConfig config, GameObject boneGO)
